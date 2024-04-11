@@ -6,6 +6,10 @@ group:
     repos: |
       Oztechan/CCC
       Oztechan/Tracefit
+      SubMob/BaseMob
+      SubMob/ScopeMob
+      SubMob/LogMob
+      SubMob/ParserMob
 
   # Code Quality
   - files:
