@@ -4,6 +4,11 @@ Oztechan/Global:
     template:
       repository:
         dependencyIssueId: "12"
+  - source: docs/
+    template:
+      repository:
+        name: 'Global'
+        owner: "Oztechan"
 
 Oztechan/CCC:
   - source: relative/renovate.json
