@@ -12,12 +12,12 @@ Example:
 
 ## Commit Message
 
-Every commit message should match the following format `[{{ repository.owner }}/{{ repository.name }}#ISSUE_ID] Commit message`
+Every commit message should match the following format `[Oztechan/Global#ISSUE_ID] Commit message`
 
 Example:
 
 ```
-[{{ repository.owner }}/{{ repository.name }}#ISSUE_ID] My cool feature
+[Oztechan/Global#ISSUE_ID] My cool feature
 ```
 
 ## Pull Request
@@ -27,23 +27,23 @@ Example:
 Pull Request title should follow below format:
 
 ```
-[{{ repository.owner }}/{{ repository.name }}#ISSUE_ID] ISSUE_TITLE
+[Oztechan/Global#ISSUE_ID] ISSUE_TITLE
 ```
 
 Example:
 
 ```
-[{{ repository.owner }}/{{ repository.name }}#ISSUE_ID] Whatever the name of ticket is
+[Oztechan/Global#ISSUE_ID] Whatever the name of ticket is
 ```
 
 ### Description
 
-Description has to have `Resolves {{ repository.owner }}/{{ repository.name }}#ISSUE_ID` with relevant issue. It will help project automations.
+Description has to have `Resolves Oztechan/Global#ISSUE_ID` with relevant issue. It will help project automations.
 
 Example:
 
 ```
-Resolves {{ repository.owner }}/{{ repository.name }}#123
+Resolves Oztechan/Global#123
 
 Some description.
 ```
