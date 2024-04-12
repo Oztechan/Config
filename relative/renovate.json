@@ -1,0 +1,38 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ],
+  "labels": [
+    "dependencies"
+  ],
+  "rebaseWhen": "conflicted",
+  "gitAuthor": "Renovate <renovate@oztechan.com>",
+  "commitBody": "Co-authored-by: Mustafa Ozhan <mr.mustafa.ozhan@gmail.com>",
+  "commitMessageAction": "[{{ repository.owner }}/{{ repository.name }}#{{ repository.dependencyIssueId }}] Update",
+  "git-submodules": {
+    "enabled": true,
+    "groupName": "Git Submodules"
+  },
+  "lockFileMaintenance": {
+    "enabled": true,
+    "commitMessageAction": "[{{ repository.owner }}/{{ repository.name }}#{{ repository.dependencyIssueId }}] Lock file maintenance"
+  },
+  "packageRules": [
+    {
+      "matchPackagePatterns": [
+        "^org.jetbrains.kotlin:kotlin",
+        "^com.google.devtools.ksp",
+        "^androidx.compose.compiler",
+        "^org.jetbrains.compose"
+      ],
+      "groupName": "kotlin"
+    },
+    {
+      "matchPackagePatterns": [
+        "^io.insert-koin"
+      ],
+      "groupName": "koin"
+    }
+  ]
+}
