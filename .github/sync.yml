@@ -1,73 +1,94 @@
-group:
-  # .github
-  - files:
-      - source: .github/auto_assign.yml
-      - source: .github/CODEOWNERS
-    repos: |
-      Oztechan/CCC
-      Oztechan/Tracefit
-      SubMob/BaseMob
-      SubMob/ScopeMob
-      SubMob/LogMob
-      SubMob/ParserMob
-
-  # Code Quality
-  - files:
-      - source: codecov.yml
-      - source: detekt.yml
-    repos: |
-      Oztechan/CCC
-      Oztechan/Tracefit
-
-  # Dependency Update
-  - files:
-      - source: renovate.json
-    repos: |
-      Oztechan/CCC
-      Oztechan/Tracefit
-      SubMob/BaseMob
-      SubMob/ScopeMob
-      SubMob/LogMob
-      SubMob/ParserMob
+Oztechan/Global:
+  - source: relative/renovate.json
+    dest: renovate.json
+    template:
+      repository:
+        dependencyIssueId: "12"
 
 Oztechan/CCC:
+  - source: relative/renovate.json
+    dest: renovate.json
+    template:
+      repository:
+        dependencyIssueId: "1457"
   - source: docs/
     template:
       repository:
         name: 'CCC'
         owner: "Oztechan"
+  - source: codecov.yml
+  - source: detekt.yml
+  - source: .github/auto_assign.yml
+  - source: .github/CODEOWNERS
 
 Oztechan/TraceFit:
+  - source: relative/renovate.json
+    dest: renovate.json
+    template:
+      repository:
+        dependencyIssueId: "11"
   - source: docs/
     template:
       repository:
         name: 'TraceFit'
         owner: "Oztechan"
+  - source: codecov.yml
+  - source: detekt.yml
+  - source: .github/auto_assign.yml
+  - source: .github/CODEOWNERS
 
 SubMob/BaseMob:
+  - source: relative/renovate.json
+    dest: renovate.json
+    template:
+      repository:
+        dependencyIssueId: "32"
   - source: docs/
     template:
       repository:
         name: 'BaseMob'
         owner: "SubMob"
+  - source: .github/auto_assign.yml
+  - source: .github/CODEOWNERS
 
 SubMob/ScopeMob:
+  - source: relative/renovate.json
+    dest: renovate.json
+    template:
+      repository:
+        dependencyIssueId: "32"
   - source: docs/
     template:
       repository:
         name: 'ScopeMob'
         owner: "SubMob"
+  - source: .github/auto_assign.yml
+  - source: .github/CODEOWNERS
 
 SubMob/LogMob:
+  - source: relative/renovate.json
+    dest: renovate.json
+    template:
+      repository:
+        dependencyIssueId: "27"
   - source: docs/
     template:
       repository:
         name: 'LogMob'
         owner: "SubMob"
+  - source: .github/auto_assign.yml
+  - source: .github/CODEOWNERS
 
 SubMob/ParserMob:
+  - source: relative/renovate.json
+    dest: renovate.json
+    template:
+      repository:
+        dependencyIssueId: "27"
   - source: docs/
     template:
       repository:
         name: 'ParserMob'
         owner: "SubMob"
+  - source: .github/auto_assign.yml
+  - source: .github/CODEOWNERS
