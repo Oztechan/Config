@@ -10,13 +10,12 @@ Oztechan/CCC:
     dest: renovate.json
     template:
       repository:
-        dependencyIssueId:
+        dependencyIssueId: "1457"
   - source: docs/
     template:
       repository:
         name: 'CCC'
         owner: "Oztechan"
-        dependencyIssueId: "1457"
   - source: codecov.yml
   - source: detekt.yml
   - source: .github/auto_assign.yml
@@ -27,13 +26,12 @@ Oztechan/TraceFit:
     dest: renovate.json
     template:
       repository:
-        dependencyIssueId:
+        dependencyIssueId: "11"
   - source: docs/
     template:
       repository:
         name: 'TraceFit'
         owner: "Oztechan"
-        dependencyIssueId: "11"
   - source: codecov.yml
   - source: detekt.yml
   - source: .github/auto_assign.yml
@@ -44,13 +42,12 @@ SubMob/BaseMob:
     dest: renovate.json
     template:
       repository:
-        dependencyIssueId:
+        dependencyIssueId: "32"
   - source: docs/
     template:
       repository:
         name: 'BaseMob'
         owner: "SubMob"
-        dependencyIssueId: "32"
   - source: .github/auto_assign.yml
   - source: .github/CODEOWNERS
 
@@ -59,13 +56,12 @@ SubMob/ScopeMob:
     dest: renovate.json
     template:
       repository:
-        dependencyIssueId:
+        dependencyIssueId: "32"
   - source: docs/
     template:
       repository:
         name: 'ScopeMob'
         owner: "SubMob"
-        dependencyIssueId: "32"
   - source: .github/auto_assign.yml
   - source: .github/CODEOWNERS
 
@@ -74,13 +70,12 @@ SubMob/LogMob:
     dest: renovate.json
     template:
       repository:
-        dependencyIssueId:
+        dependencyIssueId: "27"
   - source: docs/
     template:
       repository:
         name: 'LogMob'
         owner: "SubMob"
-        dependencyIssueId: "27"
   - source: .github/auto_assign.yml
   - source: .github/CODEOWNERS
 
@@ -89,12 +84,11 @@ SubMob/ParserMob:
     dest: renovate.json
     template:
       repository:
-        dependencyIssueId:
+        dependencyIssueId: "27"
   - source: docs/
     template:
       repository:
         name: 'ParserMob'
         owner: "SubMob"
-        dependencyIssueId: "27"
   - source: .github/auto_assign.yml
   - source: .github/CODEOWNERS
