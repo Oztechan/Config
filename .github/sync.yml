@@ -3,7 +3,7 @@ Oztechan/Global:
     dest: renovate.json
     template:
       repository:
-        name: 'TraceFit'
+        name: 'Global'
         owner: "Oztechan"
         dependencyIssueId: "12"
   - source: docs/
@@ -17,7 +17,7 @@ Oztechan/CCC:
     dest: renovate.json
     template:
       repository:
-        name: 'TraceFit'
+        name: 'CCC'
         owner: "Oztechan"
         dependencyIssueId: "1457"
   - source: docs/
@@ -53,8 +53,8 @@ SubMob/BaseMob:
     dest: renovate.json
     template:
       repository:
-        name: 'TraceFit'
-        owner: "Oztechan"
+        name: 'BaseMob'
+        owner: "SubMob"
         dependencyIssueId: "32"
   - source: docs/
     template:
@@ -69,8 +69,8 @@ SubMob/ScopeMob:
     dest: renovate.json
     template:
       repository:
-        name: 'TraceFit'
-        owner: "Oztechan"
+        name: 'ScopeMob'
+        owner: "SubMob"
         dependencyIssueId: "32"
   - source: docs/
     template:
@@ -85,8 +85,8 @@ SubMob/LogMob:
     dest: renovate.json
     template:
       repository:
-        name: 'TraceFit'
-        owner: "Oztechan"
+        name: 'LogMob'
+        owner: "SubMob"
         dependencyIssueId: "27"
   - source: docs/
     template:
@@ -101,8 +101,8 @@ SubMob/ParserMob:
     dest: renovate.json
     template:
       repository:
-        name: 'TraceFit'
-        owner: "Oztechan"
+        name: 'ParserMob'
+        owner: "SubMob"
         dependencyIssueId: "27"
   - source: docs/
     template:
