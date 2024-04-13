@@ -6,7 +6,8 @@ Oztechan/Global:
         name: 'Global'
         owner: "Oztechan"
         dependencyIssueId: "12"
-  - source: docs/
+  - source: relative/docs/
+    dest: docs/
     template:
       repository:
         name: 'Global'
@@ -20,7 +21,8 @@ Oztechan/CCC:
         name: 'CCC'
         owner: "Oztechan"
         dependencyIssueId: "1457"
-  - source: docs/
+  - source: relative/docs/
+    dest: docs/
     template:
       repository:
         name: 'CCC'
@@ -38,7 +40,8 @@ Oztechan/TraceFit:
         name: 'TraceFit'
         owner: "Oztechan"
         dependencyIssueId: "11"
-  - source: docs/
+  - source: relative/docs/
+    dest: docs/
     template:
       repository:
         name: 'TraceFit'
@@ -56,7 +59,8 @@ SubMob/BaseMob:
         name: 'BaseMob'
         owner: "SubMob"
         dependencyIssueId: "32"
-  - source: docs/
+  - source: relative/docs/
+    dest: docs/
     template:
       repository:
         name: 'BaseMob'
@@ -72,7 +76,8 @@ SubMob/ScopeMob:
         name: 'ScopeMob'
         owner: "SubMob"
         dependencyIssueId: "32"
-  - source: docs/
+  - source: relative/docs/
+    dest: docs/
     template:
       repository:
         name: 'ScopeMob'
@@ -88,7 +93,8 @@ SubMob/LogMob:
         name: 'LogMob'
         owner: "SubMob"
         dependencyIssueId: "27"
-  - source: docs/
+  - source: relative/docs/
+    dest: docs/
     template:
       repository:
         name: 'LogMob'
@@ -104,7 +110,8 @@ SubMob/ParserMob:
         name: 'ParserMob'
         owner: "SubMob"
         dependencyIssueId: "27"
-  - source: docs/
+  - source: relative/docs/
+    dest: docs/
     template:
       repository:
         name: 'ParserMob'
