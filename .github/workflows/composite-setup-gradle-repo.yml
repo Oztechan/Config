@@ -1,0 +1,44 @@
+name: Setup Gradle Repo
+description: "Checks outs the repo and sets up the JDK and Gradle.
+inputs:
+  java-version:
+    description: 'The JDK version to use'
+    default: '17'
+    required: false
+  java-distribution:
+    description: 'The JDK distribution to use'
+    default: 'temurin'
+    required: false
+  fetch-depth:
+    description: 'The depth of commits to fetch'
+    default: '0'
+    required: false
+  submodules:
+    description: 'Whether to fetch submodules'
+    default: 'recursive'
+    required: false
+  build-scan-publish:
+    description: 'Whether to publish build scans'
+    default: 'true'
+    required: false
+runs:
+  using: 'composite'
+  steps:
+    - name: Clone Repo
+      uses: actions/checkout@v4.1.4
+      with:
+        submodules: ${{ inputs.submodules }}
+        fetch-depth: ${{ inputs.fetch-depth }}
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4.2.1
+      with:
+        java-version: ${{ inputs.java-version }}
+        distribution: ${{ inputs.java-distribution }}
+
+    - name: Setup Gradle
+      uses: gradle/actions/setup-gradle@v3.3.2
+      with:
+        build-scan-publish: ${{ inputs.build-scan-publish }}
+        build-scan-terms-of-use-url: "https://gradle.com/help/legal-terms-of-use"
+               build-scan-terms-of-use-agree: "yes"
