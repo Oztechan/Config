@@ -33,12 +33,12 @@ Pull Request title should follow below format:
 Example:
 
 ```
-[Oztechan/Global#ISSUE_ID] Whatever the name of ticket is
+[Oztechan/Global#ISSUE_ID] Whatever the name of the issue is
 ```
 
 ### Description
 
-Description has to have `Resolves Oztechan/Global#ISSUE_ID` with relevant issue. It will help project automations.
+Description has to start `Resolves Oztechan/Global#ISSUE_ID`. You can add more description into new lines if you want. `Resolves` key with a issue id helps project automations.
 
 Example:
 
