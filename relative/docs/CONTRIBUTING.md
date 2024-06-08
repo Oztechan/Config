@@ -33,12 +33,12 @@ Pull Request title should follow below format:
 Example:
 
 ```
-[{{ repository.owner }}/{{ repository.name }}#ISSUE_ID] Whatever the name of ticket is
+[{{ repository.owner }}/{{ repository.name }}#ISSUE_ID] Whatever the name of the issue is
 ```
 
 ### Description
 
-Description has to have `Resolves {{ repository.owner }}/{{ repository.name }}#ISSUE_ID` with relevant issue. It will help project automations.
+Description has to start `Resolves {{ repository.owner }}/{{ repository.name }}#ISSUE_ID`. You can add more description into new lines if you want. `Resolves` key with a issue id helps project automations.
 
 Example:
 
