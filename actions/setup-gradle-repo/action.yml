@@ -3,7 +3,7 @@ description: 'Checks outs the repo and sets up the JDK and Gradle.'
 inputs:
   java-version:
     description: 'The JDK version to use'
-    default: '17'
+    default: '21'
     required: false
   java-distribution:
     description: 'The JDK distribution to use'
@@ -30,7 +30,7 @@ runs:
         submodules: ${{ inputs.submodules }}
         fetch-depth: ${{ inputs.fetch-depth }}
 
-    - name: Set up JDK 17
+    - name: Set up JDK ${{ inputs.java-version }}
       uses: actions/setup-java@v4.2.1
       with:
         java-version: ${{ inputs.java-version }}
